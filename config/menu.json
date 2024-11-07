@@ -3,46 +3,19 @@
     {
       "name": "Home",
       "url": "/"
-    },
+    },    
     {
-      "name": "About",
-      "url": "/about"
-    },
-    {
-      "name": "Blog",
-      "url": "/posts"
-    },
-    {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Terms & Conditions",
-          "url": "/terms-policy"
-        }
-      ]
-    },
-    {
-      "name": "Contact",
+      "name": "Contato",
       "url": "/contact"
     }
   ],
   "footer": [
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Contato",
+      "url": "/contact"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
-    },
-    {
-      "name": "Terms & Conditions",
+      "name": "Termos de Uso",
       "url": "/terms-policy"
     }
   ]

@@ -26,13 +26,13 @@ const Contact = ({ data }) => {
               action={config.params.contact_form_action}
               className="contact-form rounded-xl p-6 shadow-[0_4px_25px_rgba(0,0,0,0.05)]"
             >
-              <h2 className="h4 mb-6">Send A Message</h2>
+              <h2 className="h4 mb-6">Envie uma Mensagem</h2>
               <div className="mb-6">
                 <label
                   className="mb-2 block font-medium text-dark"
                   htmlFor="name"
                 >
-                  Name
+                  Nome
                 </label>
                 <input
                   className="form-input w-full"
@@ -47,7 +47,7 @@ const Contact = ({ data }) => {
                   className="mb-2 block font-medium text-dark"
                   htmlFor="email"
                 >
-                  Email
+                  E-mail
                 </label>
                 <input
                   className="form-input w-full"
@@ -62,7 +62,7 @@ const Contact = ({ data }) => {
                   className="mb-2 block font-medium text-dark"
                   htmlFor="subject"
                 >
-                  Subject
+                  Assunto
                 </label>
                 <input
                   className="form-input w-full"
@@ -76,12 +76,12 @@ const Contact = ({ data }) => {
                   className="mb-2 block font-medium text-dark"
                   htmlFor="message"
                 >
-                  Message
+                  Mensagem
                 </label>
                 <textarea className="form-textarea w-full" rows="6" />
               </div>
               <button className="btn btn-primary block w-full">
-                Submit Now
+                Enviar
               </button>
             </form>
           </div>
