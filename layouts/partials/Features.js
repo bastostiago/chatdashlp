@@ -5,6 +5,7 @@ import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { useRef } from "react";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from 'swiper'
 
 const Features = ({ features }) => {
   const paginationRef = useRef(null);
@@ -17,19 +18,23 @@ const Features = ({ features }) => {
           {markdownify(features.description, "p", "mt-10")}
         </div>
         <div className="animate from-right relative mt-10">
-          <Swiper
+          <Swiper            
+            autoplay={{
+              delay: 3000, // 3 segundos entre cada slide
+              disableOnInteraction: false, // Permite continuar o autoplay após interação
+            }}
+            loop={true} // Loop infinito
             slidesPerView={1}
             pagination={{
               type: "bullets",
               el: paginationRef.current,
               clickable: true,
               dynamicBullets: true,
-            }}
-            // autoplay={{ delay: 3000 }}
+            }}            
             onBeforeInit={(swiper) => {
               swiper.params.pagination.el = paginationRef.current;
             }}
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
             breakpoints={{
               768: {
                 slidesPerView: 2,
