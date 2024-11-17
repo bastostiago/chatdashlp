@@ -27,11 +27,11 @@ const Features = ({ features }) => {
             slidesPerView={1}
             pagination={{
               type: "bullets",
-              el: paginationRef.current,
+              el: ".swiper-pagination",//paginationRef.current,
               clickable: true,
               dynamicBullets: true,
             }}            
-            onBeforeInit={(swiper) => {
+            onBeforeInit={(swiper) => {              
               swiper.params.pagination.el = paginationRef.current;
             }}
             modules={[Pagination, Autoplay]}
@@ -57,7 +57,7 @@ const Features = ({ features }) => {
             ))}
           </Swiper>
           <div className="relative mt-9 flex justify-center">
-            <div className="pagination " ref={paginationRef}></div>
+            <div className="swiper-pagination text-primary" ref={paginationRef}></div>
           </div>
         </div>
       </div>
