@@ -14,15 +14,12 @@ brands:
   - /images/brands/04-colored.png
   - /images/brands/05-colored.png
   - /images/brands/06-colored.png
-  - /images/brands/04-colored.png
-  - /images/brands/05-colored.png
-  - /images/brands/06-colored.png
 
 #features
 features:
   sub_title: IA for Business
   title: Agilidade na Busca </br> de Insights Para o Seu Negócio
-  description: E se você puder conversar com seus sistema ao invés de gerar vários relatórios <br />que não lhe dizem nada? O ChatDash se propões a responder <br />todas as perguntar pertinentes ao crescimento do seu negócio.
+  description: E se você puder conversar com seus sistema ao invés de gerar vários relatórios <br />que não lhe dizem nada? O ChatDash se propõe a responder <br />todas as perguntar pertinentes ao crescimento do seu negócio.
   list:
     - icon: 'database' # feather icon: https://feathericons.com/
       title: Conecte Seu Sistema
@@ -46,7 +43,7 @@ features:
 #intro
 intro:
   title: Criado Exclusivamente Para o Seu Negócio
-  subtitle: VÍDEO INTRODUÇÃO
+  subtitle: IA FOR BUSINESS
   description: A Inteligência Artificial já é realidade, e queremos aplicá-la na sua empresa</br> para gerar RESULTADOS eficientes e rápidos. 
   thumbnail: "/images/video-popup.jpg"
   video_id: dyZcRRWiuuw

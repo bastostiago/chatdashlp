@@ -3,9 +3,8 @@
 import { markdownify } from "@lib/utils/textConverter";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { useRef } from "react";
-import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from 'swiper'
+import { Pagination, Autoplay, Scrollbar } from 'swiper/modules';
 
 const Features = ({ features }) => {
   const paginationRef = useRef(null);
@@ -18,47 +17,48 @@ const Features = ({ features }) => {
           {markdownify(features.description, "p", "mt-10")}
         </div>
         <div className="animate from-right relative mt-10">
-          <Swiper            
-            autoplay={{
-              delay: 3000, // 3 segundos entre cada slide
-              disableOnInteraction: false, // Permite continuar o autoplay após interação
-            }}
-            loop={true} // Loop infinito
-            slidesPerView={1}
-            pagination={{
-              type: "bullets",
-              el: ".swiper-pagination",//paginationRef.current,
-              clickable: true,
-              dynamicBullets: true,
-            }}            
-            onBeforeInit={(swiper) => {              
-              swiper.params.pagination.el = paginationRef.current;
-            }}
-            modules={[Pagination, Autoplay]}
-            breakpoints={{
-              768: {
-                slidesPerView: 2,
-              },
-              1200: {
-                slidesPerView: 3,
-              },
-            }}
-          >
-            {features.list.map((item, index) => (
-              <SwiperSlide key={"feature-" + index}>
-                <div className="feature-card m-4 rounded-md border border-transparent px-7 py-16 shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
-                  <div className="feature-card-icon inline-flex h-20 w-20 items-center justify-center rounded-md border border-[#fff7f3] text-primary">
-                    <FeatherIcon icon={item.icon} />
-                  </div>
-                  <h3 className="h4 mb-5 mt-6">{item.title}</h3>
-                  <p>{item.content}</p>
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          autoplay={{
+            delay: 3000, // 3 segundos entre cada slide
+            disableOnInteraction: false, // Permite continuar o autoplay após interação
+          }}
+          loop={true} // Loop infinito
+          slidesPerView={1}
+          pagination={{
+            type: "bullets",
+            el: paginationRef.current,
+            clickable: true,
+            dynamicBullets: true,
+          }}
+          onBeforeInit={(swiper) => {
+            swiper.params.pagination.el = paginationRef.current;
+          }}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+            },
+            1200: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {features.list.map((item, index) => (
+            <SwiperSlide key={"feature-" + index}>
+              <div className="feature-card m-4 rounded-md border border-transparent px-7 py-16 shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
+                <div className="feature-card-icon inline-flex h-20 w-20 items-center justify-center rounded-md border border-[#fff7f3] text-primary">
+                  <FeatherIcon icon={item.icon} />
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <div className="relative mt-9 flex justify-center">
-            <div className="swiper-pagination text-primary" ref={paginationRef}></div>
-          </div>
+                <h3 className="h4 mb-5 mt-6">{item.title}</h3>
+                <p>{item.content}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+
+        </Swiper>
+        <div className="relative mt-9 flex justify-center">
+          <div className="pagination " ref={paginationRef}></div>
+        </div>
         </div>
       </div>
     </section>

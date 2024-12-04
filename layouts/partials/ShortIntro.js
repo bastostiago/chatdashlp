@@ -3,24 +3,25 @@
 import Circle from "@layouts/components/Circle";
 import VideoPopup from "@layouts/components/VideoPopup";
 import { markdownify } from "@lib/utils/textConverter";
+import Image from "next/image";
 
 const ShortIntro = ({ intro }) => {
   return (
-    <section className="section pt-0" name="shortIntro">
+    <section className="section bg-[url('/images/background-logo.png')]" name="shortIntro">
       <div className="container-xl">
-        <div className="relative px-4 py-[70px]">
-          <div className="text-center">
+        <div className="relative">
+          <div className="text-center bg-white bg-opacity-80 w-full rounded-xl p-7">
             <div className="animate">
               <p>{intro.subtitle}</p>
               {markdownify(intro.title, "h2", "mt-4 section-title")}
               {markdownify(intro.description, "p", "mt-10")}
             </div>
             <div className="mx-auto mt-10 h-full max-h-[394px] w-full max-w-[716px]">
-              <VideoPopup id={intro.video_id} thumbnail={intro.thumbnail} />
+              {/* <VideoPopup id={intro.video_id} thumbnail={intro.thumbnail} /> */}
             </div>
           </div>
-          <div className="bg-theme absolute left-0 top-0 w-full">
-            <Circle
+          {/* <div className="bg-theme absolute left-0 top-0 w-full"> */}
+            {/* <Circle
               className="left-[10%] top-12"
               width={32}
               height={32}
@@ -62,8 +63,8 @@ const ShortIntro = ({ intro }) => {
               className="bottom-[18%] right-[5%]"
               width={65}
               height={65}
-            />
-          </div>
+            /> */}
+          {/* </div> */}
         </div>
       </div>
     </section>
