@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@layouts/*": ["layouts/*"],
+      "@components/*": ["layouts/components/*"],
+      "@partials/*": ["layouts/partials/*"],
+      "@shortcodes/*": ["layouts/shortcodes/*"],
+      "@config/*": ["config/*"],
+      "@json/*": ["json/*"],
+      "@hooks/*": ["hooks/*"],
+      "@lib/*": ["lib/*"]
+    },
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

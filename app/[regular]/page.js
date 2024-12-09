@@ -17,7 +17,7 @@ const RegularPages = async ({ params }) => {
   return (
     <GSAPWrapper>
       <SeoMeta
-        title={title}
+        title={"ChatDash - " + title}
         description={description ? description : content.slice(0, 120)}
         meta_title={meta_title}
         image={image}

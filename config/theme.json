@@ -11,9 +11,9 @@
         "theme_dark": "#1a292b"
       },
       "text_color": {
-        "default": "#666",
-        "dark": "#222",
-        "light": "#ceced0"
+        "default": "#2c384e",
+        "dark": "#2c384e",
+        "light": "#2c384e"
       }
     }
   },

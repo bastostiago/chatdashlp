@@ -6,17 +6,17 @@
     },    
     {
       "name": "Contato",
-      "url": "/contact"
+      "url": "/contato"
     }
   ],
   "footer": [
     {
       "name": "Contato",
-      "url": "/contact"
+      "url": "/contato"
     },
     {
       "name": "Termos de Uso",
-      "url": "/terms-policy"
+      "url": "/termos"
     }
   ]
 }

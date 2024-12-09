@@ -11,6 +11,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
     "disqus-react": "^1.1.5",
     "feather-icons-react": "^0.7.0",
     "github-slugger": "^2.0.0",
@@ -35,6 +36,7 @@
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.8",
     "@tailwindcss/typography": "^0.5.15",
+    "@types/node": "22.10.1",
     "autoprefixer": "^10.4.20",
     "date-fns": "^3.6.0",
     "date-fns-tz": "^3.1.3",
