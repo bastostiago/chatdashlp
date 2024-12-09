@@ -22,6 +22,7 @@ const Features = ({ features }) => {
           autoplay={{
             delay: 3000, // 3 segundos entre cada slide
             disableOnInteraction: false, // Permite continuar o autoplay após interação
+            pauseOnMouseEnter: true, // Pausa o autoplay ao passar o mouse
           }}
           loop={true} // Loop infinito
           slidesPerView={1}

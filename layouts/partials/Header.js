@@ -102,7 +102,7 @@ const Header = () => {
             {config.nav_button.enable && (
               <li className="nav-item lg:hidden">
                 <Link
-                  className="btn btn-primary hidden lg:flex"
+                  className="btn btn-primary lg:flex"
                   href={config.nav_button.link}
                 >
                   {config.nav_button.label}

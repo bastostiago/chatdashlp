@@ -29,7 +29,7 @@ features:
       content: Faça perguntas ao ChatDash utilizando uma linguagem natural, como se estivesse conversando com um colaborador.
     - icon: 'pie-chart'
       title: Receba Insights
-      content: O ChatDash vai te reponder da melhor forma possível, retornando seus dados em tabelas, gráficos e KPIs. Exporte seus dados, salve e muito mais.
+      content: O ChatDash vai te reponder da melhor forma possível, retornando seus dados em tabelas, gráficos e KPIs. Crie seus próprios dashboards, exporte seus dados e muito mais.
     - icon: 'mic'
       title: Fale com ChatDash
       content: Pergunte por voz utilizando seu celular, tablet ou qualquer outro dispositivo conectado a internet.
